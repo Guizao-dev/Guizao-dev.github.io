@@ -60,27 +60,30 @@
     </div>  
     <button class="carrossel-btn dir">&#8594;</button>
   </div>
-  <script>
-    const imagens = document.querySelector('.carrossel-imagens');
-    const total = imagens.children.length;
-    let indice = 0;
+ 
+<script>
+  const carrossel = document.querySelector('.carrossel');
+  const imagens = document.querySelector('.carrossel-imagens');
+  const total = imagens.children.length;
+  let indice = 0;
 
-    function atualizaCarrossel() {
-      const largura = imagens.clientWidth;
-      imagens.style.transform = `translateX(-${indice * largura}px)`;
-    }
+  function atualizaCarrossel() {
+    const largura = carrossel.clientWidth;
+    imagens.style.transform = `translateX(-${indice * largura}px)`;
+  }
 
-    document.querySelector('.carrossel-btn.esq').onclick = () => {
-      indice = (indice - 1 + total) % total;
-      atualizaCarrossel();
-    };
-    document.querySelector('.carrossel-btn.dir').onclick = () => {
-      indice = (indice + 1) % total;
-      atualizaCarrossel();
-    };
+  document.querySelector('.carrossel-btn.esq').onclick = () => {
+    indice = (indice - 1 + total) % total;
+    atualizaCarrossel();
+  };
+  document.querySelector('.carrossel-btn.dir').onclick = () => {
+    indice = (indice + 1) % total;
+    atualizaCarrossel();
+  };
 
-    window.addEventListener('resize', atualizaCarrossel);
-    window.addEventListener('DOMContentLoaded', atualizaCarrossel);
-  </script>
+  window.addEventListener('resize', atualizaCarrossel);
+  window.addEventListener('DOMContentLoaded', atualizaCarrossel);
+</script>
+
 </body>
 </html>
