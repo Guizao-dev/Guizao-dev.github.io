@@ -4,17 +4,26 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-h3 {
+.texto {
+  margin: 5%;
   color: #fff;
-  margin-top: 18px;
+  position: absolute;
+  top: 10%;
   font-size: 1rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
 }
 
 .carrossel {
   width: 100%;
   max-width: 400px;
-  margin: 40px auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
@@ -67,10 +76,11 @@ h3 {
 
 @media (max-width: 500px) {
   .carrossel {
-    max-width: 75vw;
+    max-width: 95vw;
   }
   .carrossel-imagens img {
-    height: 100px;
+    height: 400px;
+    max-width: 95vw;
   }
   h3 {
     font-size: 0.95rem;
