@@ -1,0 +1,52 @@
+/* ...existing code... */
+.carta-container {
+  max-width: 600px;
+  margin: 48px auto 0 auto;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+  padding: 32px 24px;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.carta-data {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #81269c;
+  background: #f0f0f0;
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(129,38,156,0.08);
+}
+
+.carta-container p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
+  color: #81269c;
+}
+
+.carta-container p:first-of-type {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .carta-container {
+    padding: 16px 6px;
+    margin-top: 18px;
+  }
+  .carta-data {
+    font-size: 1rem;
+    padding: 5px 12px;
+  }
+  .carta-container p {
+    font-size: 1rem;
+  }
+}
+/* ...existing code... */

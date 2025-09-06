@@ -1,0 +1,87 @@
+/* ...existing code... */
+body {
+  font-family: 'Segoe UI';
+  background:#81269c;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 500px;
+  margin: 60px auto 0 auto;
+  background: #81269c;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.descricao {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+#contador {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #fff;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.botao {
+  background: #fff;
+  color: #81269c;
+  padding: 12px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+  background: #81269c;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 6px;
+    margin-top: 20px;
+  }
+  .titulo {
+    font-size: 1.4rem;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+  .descricao {
+    font-size: 0.95rem;
+  }
+  .botao {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
