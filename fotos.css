@@ -67,10 +67,10 @@ h3 {
 
 @media (max-width: 500px) {
   .carrossel {
-    max-width: 200vw;
+    max-width: 75vw;
   }
   .carrossel-imagens img {
-    height: 250px;
+    height: 100px;
   }
   h3 {
     font-size: 0.95rem;
